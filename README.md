@@ -1,2 +1,0 @@
-# sbapp
-mobile app
