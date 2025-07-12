@@ -4,8 +4,8 @@ FROM node:18
 # Set working directory to backend
 WORKDIR /usr/src/app
 
-# Copy the entire backend directory (using wildcard to handle space in directory name)
-COPY Read\ Me/backend/ ./
+# Copy the backend directory (using .dockerignore to filter)
+COPY . .
 
 # Install dependencies
 RUN npm install
